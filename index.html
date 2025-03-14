@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="bubbles.png" />
+
     <link rel="stylesheet" href="style.css" />
     <title>Bubble Game</title>
   </head>
@@ -13,17 +14,17 @@
         <div class="header">
           <div class="board">
             <h3>Hit</h3>
-            <div class="hitVar score-board">2</div>
+            <div id="hitVar" class="score-board"></div>
             <h3>Timer</h3>
-            <div class="timerVar score-board">45sec</div>
+            <div id="timerVar" class="score-board">60sec</div>
             <h3>Score</h3>
-            <div class="scoreVar score-board">23</div>
+            <div id="scoreVar" class="score-board">0</div>
           </div>
         </div>
-        <div class="game-window">
-          <button>1</button>
-        </div>
+        <div id="game-window"></div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
