@@ -37,7 +37,7 @@ function timeRunner() {
       // when time is 0, game stopped
       time--;
       document.querySelector("#timerVar").textContent = time;
-      console.log(time);
+      // console.log(time);
     } else {
       clearInterval(x);
       document.querySelector(
@@ -48,7 +48,7 @@ function timeRunner() {
     // Check if time reaches 5 and play tic sound
     if (time === 5) {
       ticSound.play(); // Play tic sound
-      console.log(`time 5 ${time}`);
+      // console.log(`time 5 ${time}`);
     }
 
     // Check if time reaches 0 and play game over sound
