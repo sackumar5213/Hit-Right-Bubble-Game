@@ -25,8 +25,12 @@ function GetScore() {
   document.querySelector("#scoreVar").textContent = score;
 }
 
+// Get the audio elements
+const ticSound = document.getElementById("tic-sound");
+const gameOverSound = document.getElementById("game-over-sound");
+
 // timer runner
-let time = 20;
+let time = 25;
 function timeRunner() {
   let x = setInterval(() => {
     if (time > 0) {
@@ -40,6 +44,21 @@ function timeRunner() {
         "#game-window"
       ).innerHTML = `<h1>GAME OVER <br> Your Score is ${score}</h1>`;
     }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Check if time reaches 5 and play tic sound
+    if (time === 5) {
+      ticSound.play(); // Play tic sound
+      console.log(`time 5 ${time}`);
+    }
+
+    // Check if time reaches 0 and play game over sound
+    if (time === 0) {
+      gameOverSound.play(); // Play game over sound
+      console.log(`time 0 ${time}`);
+      clearInterval(timerInterval); // Stop the timer
+      alert("Game Over!"); // Optional alert
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////
   }, 1000);
 }
 
