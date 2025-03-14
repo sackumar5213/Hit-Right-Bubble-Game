@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
+/* reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #e67e22;
+}
+
+/* Styling the Container */
+.container {
+  background-color: #f39c12;
+  width: 80vw;
+  height: 86.1vh;
+  margin: 5.6vh auto;
+  border-radius: 20.5px;
+}
+
+.header {
+  background-color: #3498db;
+  border-radius: 20.5px 20.5px 0 0;
+}
+
+.board {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  width: 61.1%;
+}
+
+.score-board {
+  background-color: aqua;
+  border-radius: 11.6px;
+  padding: 6.3px;
+  margin-block: 10px;
+  width: 61.7px;
+  height: 30px;
+  text-align: center;
+}
+
+/* styling the bubbles */
+.game-window button {
+  width: 61.4px;
+  height: 64px;
+  border: 1px solid black;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  margin: 10px;
+  cursor: pointer;
+}
